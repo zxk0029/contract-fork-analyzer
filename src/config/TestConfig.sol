@@ -9,9 +9,9 @@ contract TestConfig {
         string name;
         uint256 version;
     }
-    
+
     mapping(uint256 => mapping(string => DEXConfig)) public dexConfigs;
-    
+
     constructor() {
         // Ethereum Mainnet (chainId: 1)
         dexConfigs[1]["Uniswap_V2"] = DEXConfig({
@@ -21,7 +21,7 @@ contract TestConfig {
             name: "Uniswap_V2",
             version: 2
         });
-        
+
         dexConfigs[1]["Uniswap_V3"] = DEXConfig({
             router: 0xE592427A0AEce92De3Edee1F18E0157C05861564,
             factory: 0x1F98431c8aD98523631AE4a59f267346ea31F984,
@@ -29,7 +29,7 @@ contract TestConfig {
             name: "Uniswap_V3",
             version: 3
         });
-        
+
         // BSC (chainId: 56)
         dexConfigs[56]["PancakeSwap_V2"] = DEXConfig({
             router: 0x10ED43C718714eb63d5aA57B78B54704E256024E,
@@ -38,7 +38,7 @@ contract TestConfig {
             name: "PancakeSwap_V2",
             version: 2
         });
-        
+
         dexConfigs[56]["PancakeSwap_V3"] = DEXConfig({
             router: 0x13f4EA83D0bd40E75C8222255bc855a974568Dd4,
             factory: 0x0BFbCF9fa4f9C56B0F40a671Ad40E0805A091865,
@@ -47,8 +47,8 @@ contract TestConfig {
             version: 3
         });
     }
-    
+
     function getDEXConfig(uint256 chainId, string memory dexName) public view returns (DEXConfig memory) {
         return dexConfigs[chainId][dexName];
     }
-} 
+}

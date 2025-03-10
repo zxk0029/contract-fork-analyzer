@@ -14,7 +14,8 @@ remappings = [
     "@uniswap/v2-periphery/=lib/v2-periphery/",
     "@uniswap/v3-core/=lib/v3-core/",
     "@uniswap/v3-periphery/=lib/v3-periphery/",
-    "@pancakeswap/=lib/pancake-smart-contracts/projects/exchange-protocol/"
+    "@pancakeswap-v2/=lib/pancake-smart-contracts/projects/exchange-protocol/",
+    "@pancakeswap-v3/=lib/pancake-v3-contracts/"
 ]
 
 [rpc_endpoints]
