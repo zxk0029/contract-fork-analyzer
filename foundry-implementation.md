@@ -66,12 +66,6 @@ cd contract-fork-analyzer
 
 # 安装依赖（使用 --no-commit 选项避免 git 问题）
 forge install --no-commit OpenZeppelin/openzeppelin-contracts
-forge install --no-commit Uniswap/v2-core
-forge install --no-commit Uniswap/v2-periphery
-forge install --no-commit Uniswap/v3-core
-forge install --no-commit Uniswap/v3-periphery
-forge install --no-commit pancakeswap/pancake-smart-contracts
-forge install --no-commit pancakeswap/pancake-v3-contracts
 
 # 注意：如果遇到 git 相关错误，可以尝试：
 # 1. 使用 --no-commit 选项
